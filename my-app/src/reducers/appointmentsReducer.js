@@ -29,7 +29,7 @@ import moment from "moment";
         };
         return newState;
         
-      } 
+      } break;
   
       case APPOINTMENTS_CREATE_CUSTOM:
           {
@@ -54,7 +54,7 @@ import moment from "moment";
 
         return newState;
         
-      } 
+      } break;
   
       case APPOINTMENTS_GET_SESSION_STORAGE:
       {
@@ -68,7 +68,7 @@ import moment from "moment";
           var appointmentDate = '' 
           var apointment = [] 
           for (let index = 0; index < appointmentSession.key.length; index++) {
-            if(appointmentSession.key[index] !== '_'){
+            if(appointmentSession.key[index] != '_'){
               appointmentDate = appointmentDate + appointmentSession.key[index]
             }else{
               apointment.push(appointmentDate)
@@ -84,7 +84,7 @@ import moment from "moment";
           error: null
         };
         return newState;
-      } 
+      } break;
   
       case APPOINTMENTS_FETCHING:
       {
@@ -94,7 +94,7 @@ import moment from "moment";
         };
   
         return newState;
-      } 
+      } break;
 
       case APPOINTMENTS_ERROR:
       {
@@ -104,7 +104,7 @@ import moment from "moment";
         };
   
         return newState;
-      } 
+      } break;
       default:
         return { ...state };
       

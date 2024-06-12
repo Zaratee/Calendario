@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 
 
 const Calendar = (props) => {  
-  const {appointments, error} = props
+  const {appointments, loading, error} = props
   const selectedDate = useContext(dateSelectedContext)
   var currentMonthDays = []
   var prevMonthDays = []
@@ -54,7 +54,7 @@ const Calendar = (props) => {
     if(appointments === undefined){
       return
     }
-    const isAppointmentCurrentMonth = appointments.filter((appointment) => parseInt(appointment.month)-1 === selectedDate.month && appointment.year === selectedDate.year);
+    const isAppointmentCurrentMonth = appointments.filter((appointment) => parseInt(appointment.month)-1 == selectedDate.month && appointment.year == selectedDate.year);
     if(isAppointmentCurrentMonth.length > 0 ){
       isAppointmentCurrentMonth?.forEach(appointment => {
         const findDay = (month) => month.numberDay === parseInt(appointment.day);
