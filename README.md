@@ -1,5 +1,10 @@
 # Calendario
-Calendario con la función de crear eventos personalizados, hecho con React haciendo uso de Redux, Fetch, LocalStorage,
+Calendario con la función de crear eventos personalizados, hecho con React haciendo uso de 
+- Redux
+- Fetch
+- LocalStorage
+- TailWind
+- moment
 
 # Design
  |     Calendar    |
