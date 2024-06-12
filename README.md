@@ -1,5 +1,7 @@
 # Calendario
-Calendario con la función de crear eventos personalizados, hecho con React haciendo uso de 
+Calendario con la función de crear eventos personalizados, y un botón para borrarlos. 
+<br>
+Hecho con React haciendo uso de:
 - Redux
 - Fetch
 - LocalStorage
